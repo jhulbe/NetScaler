@@ -152,6 +152,7 @@ FunctionsToExport = @(
     'Get-NSSSLProfile',
     'Get-NSStat',
     'Get-NSSystemFile',
+    'Get-NSTCPConnections',
     'Get-NSTimeZone',
     'Get-NSVersion',
     'Get-NSVPNServer',
