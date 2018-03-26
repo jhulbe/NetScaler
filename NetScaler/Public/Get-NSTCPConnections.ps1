@@ -23,12 +23,6 @@ function Get-NSTCPConnections {
         Get NetScaler connection table
 
     .EXAMPLE
-        Get-NSHostname
-
-        Gets the current NetScaler connection table.
-
-    .EXAMPLE
-        
         Get-NSTCPConnections | ?{$_.sourceip -like "10.253.253*"} | ft
         Get-NSTCPConnections | ?{$_.svctype -eq "SSL"} | ft
         
