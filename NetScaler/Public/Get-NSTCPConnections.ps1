@@ -25,6 +25,7 @@ function Get-NSTCPConnections {
     .EXAMPLE
         Get-NSTCPConnections | ?{$_.sourceip -like "10.253.253*"} | ft
         Get-NSTCPConnections | ?{$_.svctype -eq "SSL"} | ft
+        1..1800 | %{(Get-NSTCPConnections | ?{$_.destip -like "$vipIPaddress"} | ft).count ; sleep 1}
         
     .PARAMETER Session
 
